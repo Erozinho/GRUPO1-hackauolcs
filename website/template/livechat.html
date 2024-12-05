@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player com Chat</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='basic.css') }}">
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
 <body>
 
 <div class="container">
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/gLNFRoEdOfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- Player de vídeo usando HLS.js ou Video.js -->
+        <video id="videoPlayer" class="video-js vjs-default-skin" controls autoplay></video>
     </div>
 
     <div class="chat-container">

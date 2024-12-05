@@ -18,3 +18,19 @@ document.getElementById('messageInput').addEventListener('keypress', function(e)
         document.getElementById('sendButton').click();
     }
 });
+
+var video = document.getElementById('videoPlayer');
+
+if (Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource('http://172.19.192.146/hls/stream.m3u8'); // Endereço do seu arquivo HLS
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+        video.play();
+    });
+} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = 'http://172.19.192.146/hls/stream.m3u8';
+    video.addEventListener('loadedmetadata', function () {
+        video.play();
+    });
+}
