@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player com Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/gLNFRoEdOfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <span>Chat ao Vivo</span>
+        </div>
+        <div class="chat-box" id="chatBox"></div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Digite uma mensagem..." />
+            <button id="sendButton">Enviar</button>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
