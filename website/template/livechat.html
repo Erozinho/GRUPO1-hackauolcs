@@ -11,7 +11,7 @@
 
 <div class="topbar">
 
-    <img class="logo" src="{{ url_for('static', filename='assets/logo-uol-play.svg') }}" alt="">
+    <img class="logo" src="{{ url_for('static', filename='assets/logo_final.png') }}" alt="">
 
     <div>
         <a href="#">Inicio</a>
@@ -32,7 +32,7 @@
 <div class="container">
     <div class="video-container">
         <!-- Player de vídeo usando HLS.js ou Video.js -->
-        <video id="videoPlayer" class="video-js vjs-default-skin" controls autoplay></video>
+        <video id="videoPlayer" class="video-js vjs-default-skin" controls autoplay poster="{{ url_for('static', filename='assets/lol_demo.png') }}"></video>
     </div>
 
     <div class="chat-container">
@@ -40,7 +40,22 @@
             <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill="#f7a11c" fill-rule="evenodd"><path d="m20 20v-16h-16v16zm-1.5-1.5h-2.5v-13h2.5zm-4-13v13h-9v-13z"/><path d="m10.4434 12.0041-2.47373-2.47377 1.06066-1.06066 3.53437 3.53443-3.53372 3.5337-1.06066-1.0607z"/></g></svg>
             <span>Chat ao Vivo</span>
         </div>
-        <div class="chat-box" id="chatBox"></div>
+        <div class="chat-box" id="chatBox">
+            <div class="message"><span>Usuário 123:</span> Lorem ipsum dolor sit amet</div>
+            <div class="message"><span>Usuário qew:</span> consectetur a</div>
+            <div class="message"><span>Usuário zxc:</span> urabitur posuere consequat arcu</div>
+            <div class="message"><span>Usuário 123:</span> a imperdiet.</div>
+            <div class="message"><span>Usuário zxc:</span> Duis non scelerisque</div>
+            <div class="message"><span>Usuário uio:</span> sem. Vivamus auctor arcu in sem</div>
+            <div class="message"><span>Usuário uio:</span> Aenean pulvinar nunc urna,</div>
+            <div class="message"><span>Usuário uio:</span> posuere eget fringilla eu, mattis at diam.</div>
+            <div class="message"><span>Usuário 123:</span> Lorem ipsum dolor sit amet</div>
+            <div class="message"><span>Usuário qew:</span> consectetur a</div>
+            <div class="message"><span>Usuário zxc:</span> urabitur posuere consequat arcu</div>
+            <div class="message"><span>Usuário 123:</span> a imperdiet.</div>
+            <div class="message"><span>Usuário zxc:</span> Duis non scelerisque</div>
+            <div class="message"><span>Usuário uio:</span> sem. Vivamus auctor arcu in sem</div>
+        </div>
         <div class="chat-input">
             <input type="text" id="messageInput" placeholder="Digite uma mensagem..." />
             <button id="sendButton">Enviar</button>

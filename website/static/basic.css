@@ -27,7 +27,7 @@ body {
 
 .topbar .logo {
     width:172px;
-    height: 42px;
+    /* height: 42px; */
     margin: 0 48px 0 0;
 }
 
@@ -138,6 +138,11 @@ body {
 .message span {
     font-weight: bold;
     color: #ff8c00;
+}
+
+.message span.you {
+    font-weight: bold;
+    color: rgb(14, 206, 255);
 }
 
 /* Estilo da caixa de input do chat */
