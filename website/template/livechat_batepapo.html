@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player com Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<body>
+
+<div class="topbar">
+
+    <img class="logo" src="{{ url_for('static', filename='assets/logo.png') }}" alt="">
+    <a href="#">Acessar salas &#8964;</a>
+
+    <button type="button" data-metrics-category="Navegação" data-metrics-action="Usuário clicou em seja VIP" data-metrics-label="Header menu salas" class="components-Header-Header-module__goldenButton" title="Seja VIP"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.62 12.44" height="15" width="15" fill="#000">
+        <path d="M15.35,10.46H1.27l7-8.38Z"></path>
+        <path d="M8.31,10.46h-7L0,4.33Z"></path>
+        <path d="M8.31,10.46h7l1.27-6.13Z"></path>
+        <path d="M9.07.79A.8.8,0,1,1,8.28,0h0A.79.79,0,0,1,9.07.79Z"></path>
+        <rect x="1.5" y="11.46" width="13.61" height="0.99"></rect>
+      </svg>&nbsp;Seja VIP</button>
+</div>
+
+<div class="breadcrump">
+    <a href="#">Diversos</a>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="10" width="10" xmlns="http://www.w3.org/2000/svg">
+        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"></path>
+    </svg>
+    <a href="#">Esportes</a>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="10" width="10" xmlns="http://www.w3.org/2000/svg">
+        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"></path>
+    </svg>
+    <a href="#">Futebol</a>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="10" width="10" xmlns="http://www.w3.org/2000/svg">
+        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"></path>
+    </svg>
+    <a href="#">Real Madrid</a>
+</div>
+
+<div class="container">
+    <div class="video-container">
+        <!-- Player de vídeo usando HLS.js ou Video.js -->
+        <video id="videoPlayer" class="video-js vjs-default-skin" controls autoplay></video>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <span>Chat ao Vivo</span>
+        </div>
+        <div class="chat-box" id="chatBox"></div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Digite uma mensagem..." />
+            <button id="sendButton">Enviar</button>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

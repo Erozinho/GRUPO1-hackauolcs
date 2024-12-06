@@ -1,0 +1,11 @@
+{
+  "name": "grupo1-hackauolcs",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">GRUPO 1 - <NOME></h1> <h3 align=\"center\">HackathonUOLCS 2024</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

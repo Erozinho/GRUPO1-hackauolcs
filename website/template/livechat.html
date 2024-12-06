@@ -9,6 +9,26 @@
 
 <body>
 
+<div class="topbar">
+
+    <img class="logo" src="{{ url_for('static', filename='assets/logo-uol-play.svg') }}" alt="">
+
+    <div>
+        <a href="#">Inicio</a>
+        <a href="#">Assistir</a>
+        <a href="#">Ao Vivo</a>
+        <a href="#">Assine</a>
+        <a href="#">Blog</a>
+        <a href="#">Como Acessar</a>
+    </div>
+
+    <button type="button" data-metrics-category="Navegação" data-metrics-action="Usuário clicou em seja VIP" data-metrics-label="Header menu salas" class="components-Header-Header-module__goldenButton" title="Seja VIP">
+        <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+        Entrar
+    </button>
+</div>
+
+
 <div class="container">
     <div class="video-container">
         <!-- Player de vídeo usando HLS.js ou Video.js -->
@@ -17,6 +37,7 @@
 
     <div class="chat-container">
         <div class="chat-header">
+            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill="#f7a11c" fill-rule="evenodd"><path d="m20 20v-16h-16v16zm-1.5-1.5h-2.5v-13h2.5zm-4-13v13h-9v-13z"/><path d="m10.4434 12.0041-2.47373-2.47377 1.06066-1.06066 3.53437 3.53443-3.53372 3.5337-1.06066-1.0607z"/></g></svg>
             <span>Chat ao Vivo</span>
         </div>
         <div class="chat-box" id="chatBox"></div>
