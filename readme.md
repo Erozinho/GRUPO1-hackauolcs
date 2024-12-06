@@ -1,7 +1,7 @@
 <h1 align="center">GRUPO 1 - <NOME></h1>
 <h3 align="center">HackathonUOLCS 2024</h3>
 
-- 🚹 MEMBERS: **<a href="https://www.linkedin.com/in/<>/">DOUGLAS</a> | <a href="https://www.linkedin.com/in/felaraujo/">FELIPE</a> | <a href="https://www.linkedin.com/in/<>/">ILLICHS</a> | <a href="https://www.linkedin.com/in/<>/">RENATO</a> | <a href="https://www.linkedin.com/in/<>/">PAULO</a>**
+- 🚹 MEMBERS: **<a href="https://www.linkedin.com/in/<>/">DOUGLAS</a> | <a href="https://www.linkedin.com/in/felaraujo/">FELIPE</a> | <a href="https://www.linkedin.com/in/<>/">ILLICHS</a> | <a href="https://www.linkedin.com/in/<>/">RENATO</a> | <a href="https://www.linkedin.com/in/paulo-henrique-cunha-84b36b97/">PAULO</a>**
 
 <p align="left">
 
